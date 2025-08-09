@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="bg-white text-white flex items-center justify-center ] w-screen h-screen">
+    <div class="flex flex-col space-y-[2rem] items-center justify-center bg-gray-900 w-[30%] h-[50%]">
+      <h1 class="text-[30px]">Word Counter</h1>
+      <p class="text-blue-300 text-[85px] font-bold" id="count">0</p>
+      <div class="flex space-x-[1rem] items-center">
+        <button class="p-[0.5rem] text-white font-medium text-[12px] border border-1px border-white" id="increase">Increase</button>
+        <button class="p-[0.5rem] text-white font-medium text-[12px] border border-1px border-white" id="decrease">Decrease</button>
+        <button class="p-[0.5rem] text-white font-medium text-[12px] border border-1px border-white" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script>
+      const countOut = document.getElementById("count");
+      const increaseBtn = document.getElementById("increase");
+      const decreaseBtn = document.getElementById("decrease");
+      const resetBtn = document.getElementById("reset");
+
+      let count = 0;
+
+      function realCount() {
+        countOut.textContent = count;
+        if (count > 0) {
+          countOut.style.color = "limegreen";
+        } else if (count < 0) {
+          countOut.style.color = "red";
+        } else {
+          countOut.style.color = "#00FFD1";
+        }
+      }
+
+      increaseBtn.addEventListener("click", () => {
+        count++;
+        realCount();
+      });
+      decreaseBtn.addEventListener("click", () => {
+        count--;
+        realCount();
+      });
+      resetBtn.addEventListener("click", () => {
+        count = 0;
+        realCount();
+      });
+
+      //   #00FFD1
+      // limegreen
+      // red
+    </script>
+  </body>
+</html>
