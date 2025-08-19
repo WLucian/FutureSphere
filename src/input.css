@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --default-font-family: "Inter", sans-serif;
+}
+
+@theme {
+  --font-family: "Manrope", sans-serif;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 20s linear infinite;
+}
+
+.footer-bg {
+  background-image: url(/Assets/images/Rectangle\ 9383.png);
+}
+
+/* default-font-family */
