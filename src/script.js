@@ -1,3 +1,5 @@
+console.log("Script loaded");
+
 const toggleMenu = document.getElementById("toggleMenu");
 const closeMenu = document.getElementById("closeMenu");
 const defaultMenu = document.getElementById("defaultMenu");
@@ -41,7 +43,7 @@ const testimonialName = document.getElementById("testimonialName");
 const testimonialRole = document.getElementById("testimonialRole");
 
 const carousel = document.getElementById("carousel");
-const items = carousel.querySelectorAll(".item img");
+const items = document.querySelectorAll(".item");
 
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
