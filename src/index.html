@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="w-[100%] bg-[#f9fafb] pt-[1rem] md:pt-[1rem]">
+    <!-- desktop nav -->
+    <nav class="hidden md:flex w-full items-center justify-center h-[59px]">
+      <div class="fixed top-[1rem] h-[59px] lg:px-[5rem] z-100 w-full flex items-center justify-center container mx-auto">
+        <div
+          id="desktopNav"
+          class="w-[100%] h-full bg-[#1B152B] rounded-[50px] hidden md:flex justify-between items-center p-[1.5rem] container transition-all duration-500">
+          <img src="./assets/icon-logo/logo-wrapper.png" alt="company_logo" />
+          <ul class="flex space-x-[1rem] text-white md:text-[12px] lg:text-[16px] font-normal font-family">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+          <button class="bg-[#7F56D9] text-white w-[137px] h-[35px] rounded-[50px]">Contact Us</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile nav -->
+    <nav class="md:hidden">
+      <!-- default nav -->
+      <div class="flex w-full items-center justify-center">
+        <div class="fixed top-[1rem] h-[40px] px-[1rem] z-100 w-full flex items-center justify-center">
+          <div
+            id="defaultMenu"
+            class="bg-[#1B152B] h-full w-[100%] rounded-[50px] md:hidden flex justify-between items-center p-[1rem] container transition-all duration-500">
+            <img src="./assets/icon-logo/logo-wrapper.png" alt="" class="w-[120px] h-[17px]" />
+            <button id="toggleMenu"><img src="./assets/icon-logo/mobile-hamburger.png" alt="" /></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- toggled div -->
+      <div
+        id="mobileMenu"
+        class="opacity-0 pointer-events-none md:hidden fixed gap-[2rem] top-0 z-100 bg-[#1B152B] w-full h-full p-[1rem] container transform translate-y-full transition-all duration-200 ease-in-out">
+        <div class="flex justify-between items-center">
+          <img src="./assets/icon-logo/logo-wrapper.png" alt="" class="w-[120px] h-[17px]" />
+          <button class="text-[#7F56D9] text-3xl" id="closeMenu">&times</button>
+        </div>
+
+        <div class="flex flex-col w-[100%] justify-between gap-[2rem] mt-[2rem]">
+          <ul class="flex flex-col space-y-[2rem] text-white text-[16px] font-normal font-family">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+          <button class="bg-[#7F56D9] text-white h-[35px] rounded-[5px]">Contact Us</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="mt-[4rem] md:mt-[4.5rem] flex flex-col items-center space-y-[3rem] container px-[1rem] md:px-[0rem] lg:px-[5rem] mx-auto">
+      <div class="flex flex-col items-center space-y-[1rem]">
+        <p class="font-medium md:font-normal w-[100%] text-[32px] md:text-[48px] lg:text-[72px] text-center text-[#1B152B] leading-tight">
+          Revolutionizing the Future with Cutting-Edge Technology
+        </p>
+        <p class="font-family text-[16px] font-normal text-[#7A7D9C] text-center">Empowering Innovation for a Digital Tomorrow</p>
+        <div class="w-[260px] h-[35px] flex justify-between items-center">
+          <button class="h-[100%] w-[108px] bg-[#1B152B] text-white rounded-[50px] text-[16px] font-normal">Sign Up</button>
+          <button class="h-[100%] w-[137px] text-white bg-[#7F56D9] rounded-[50px] text-[16px] font-normal">Contact Us</button>
+        </div>
+        <img
+          src="./images/hero-Image.png"
+          alt=""
+          class="rounded-[20px] md:rounded-[500px] mt-[1rem] w-[100%] h-[245px] md:w-[659px] md:h-[245px] lg:h-[388px] lg:w-[1058px]" />
+      </div>
+      <div
+        class="lg:w-[931px] w-[100%] h-[250px] md:h-[123px] flex flex-col md:flex-row text-[#7F56D9] bg-white border-[1px] border-[#EFF0F6] rounded-[10px] px-[48px] py-[16px] items-center justify-between">
+        <div class="flex flex-col items-center">
+          <p class="font-normal md:font-semibold lg:text-[48px] md:text-[36px] text-[20px]">50k</p>
+          <p class="font-family font-normal text-[16px] md:text-[20px] lg:text-[24px]">New users per month</p>
+        </div>
+        <div class="w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[100%]"></div>
+        <div class="flex flex-col items-center">
+          <p class="font-normal md:font-semibold lg:text-[48px] md:text-[36px] text-[20px]">150k</p>
+          <p class="font-family font-normal text-[16px] md:text-[20px] lg:text-[24px]">Active Users</p>
+        </div>
+        <div class="w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[100%]"></div>
+        <div class="flex flex-col items-center">
+          <p class="font-normal md:font-semibold lg:text-[48px] md:text-[36px] text-[20px]">98%</p>
+          <p class="font-family font-normal text-[16px] md:text-[20px] lg:text-[24px]">Satisfied Customers</p>
+        </div>
+      </div>
+
+      <!-- features button -->
+
+      <div class="flex flex-col items-center mt-[3rem]">
+        <div
+          class="bg-[url('/assets/images/Noise(1).png')] bg-cover bg-center w-[85px] h-[30px] rounded-[50px] bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px]">
+          Features
+        </div>
+        <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5rem]">
+          Discover the Tools that Drive Success
+        </p>
+        <p class="text-[#7A7D9C] font-normal md:font-medium text-[12px] text-center md:text-[16px] font-family w-[303px] md:w-[100%] mt-[1.5rem]">
+          Unleash innovation and accelerate growth with our dynamic product.
+        </p>
+      </div>
+
+      <!-- Tools -->
+
+      <div
+        class="w-[100%] space-y-[2rem] md:space-y-0 h-[100%] md:h-[422px] rounded-[10px] flex flex-col md:flex-row bg-white border-[1px] border-[#EFF0F6] px-[65px] py-[47px] items-center justify-between">
+        <div class="flex flex-col w-[271px] p-[20px] h-[306px] justify-between items-center relative">
+          <img src="/Assets/Icon & Logo/Icon.png" alt="" class="w-[40px] h-[36px]" />
+          <div class="flex flex-col items-center h-[214px] justify-between">
+            <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%]"></div>
+            <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Cutting-Edge Innovation</p>
+            <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+              Experience groundbreaking technological advancements that push the boundaries of what's possible, revolutionizing industries and
+              transforming the way we live and work.
+            </p>
+          </div>
+        </div>
+        <div class="w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+        <div class="flex flex-col w-[271px] p-[20px] h-[306px] justify-between items-center relative">
+          <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute top-[4rem] rounded-[50%]"></div>
+          <img src="./assets/icon-logo/icon-(1).png" alt="" class="w-[40px] h-[36px]" />
+          <div class="flex flex-col items-center h-[214px] justify-between">
+            <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Seamless Connectivity</p>
+            <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+              Stay connected anytime, anywhere with our robust and reliable network infrastructure, ensuring uninterrupted communication and
+              effortless access to the digital world.
+            </p>
+          </div>
+        </div>
+        <div class="md:hidden lg:flex w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+        <div class="md:hidden lg:flex flex flex-col w-[271px] p-[20px] h-[306px] justify-between items-center relative">
+          <div class="md:hidden lg:flex w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute top-[4rem] rounded-[50%]"></div>
+          <img src="./assets/icon-logo/icon-(2).png" alt="" class="w-[40px] h-[36px]" />
+          <div class="flex md:hidden lg:flex flex-col items-center h-[214px] justify-between">
+            <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Intuitive User Interface</p>
+            <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+              Enjoy a seamless and intuitive user experience with our sleek and user-friendly interface, designed to simplify complex tasks and
+              enhance productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[254px] h-[35px] hidden md:flex justify-between items-center">
+        <button class="bg-[#7F56D9] text-white w-[137px] h-[35px] rounded-[50px]">Contact Us</button>
+        <button class="flex gap-[1rem] items-center justify-center">
+          View All
+          <div>></div>
+        </button>
+      </div>
+
+      <!-- mission statement -->
+      <div
+        class="w-[100%] h-[100%] mt-[3.5rem] px-[20px] py-[43px] bg-white border-[1px] relative lg:static border-[#EFF0F6] rounded-[30px] flex flex-col lg:flex-row justify-between lg:items-center">
+        <div class="flex flex-col space-y-[35px]">
+          <div class="flex flex-col space-y-[20px]">
+            <div
+              class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[196px] rounded-[50px]">
+              Our Mission Statement
+            </div>
+            <p class="w-[100%] md:w-[636px] lg:w-[501px] text-[20px] md:text-[36px] text-[#1B152B] leading-tight mt-[17rem] md:mt-[450px] lg:mt-0">
+              Empowering the world through transformative technology solutions
+            </p>
+            <p class="w-[100%] md:w-[636px] lg:w-[501px] text-[12px] md:text-[16px] font-family text-[#7A7D9C] leading-normal">
+              We are dedicated to empowering individuals, businesses, and communities by providing innovative and cutting-edge technology solutions
+              that unlock new possibilities and drive positive change. Our mission is to make technology accessible, reliable, and impactful, enabling
+              our customers to thrive in the digital era and shape a better future for all.
+            </p>
+          </div>
+          <div class="flex items-center space-x-[1rem]">
+            <button class="text-[#7F56D9]">Signup</button>
+            <button class="bg-[#7F56D9] text-white w-[110px] md:w-[137px] h-[35px] rounded-[50px]">Contact Us</button>
+          </div>
+        </div>
+        <div class="md:max-w-full absolute top-[6rem] md:top-[6.5rem] lg:static pr-[1rem] md:pr-0 md:w-[100%]">
+          <div class="md:w-[90%] lg:w-full h-[400px] max-w-full">
+            <img src="./images/image-wrapper.png" alt="" class="lg:w-full lg:h-full max-h-full w-full rounded-[20px] md:rounded-[30px]" />
+          </div>
+        </div>
+      </div>
+
+      <!-- our clients -->
+      <div class="flex flex-col mt-[3.5rem] w-full space-y-[3rem]">
+        <div class="flex flex-col items-center space-y-[1rem]">
+          <div
+            class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[120px] rounded-[50px]">
+            Our Clients
+          </div>
+          <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5r]">
+            Trusted by Industry Leaders
+          </p>
+          <p class="text-[#7A7D9C] font-normal md:font-medium text-[12px] text-center md:text-[16px] font-family w-[303px] md:w-[720px] mt-[1.5r]">
+            Join our roster of satisfied clients and experience the exceptional results and service that have earned us the trust of industry leaders
+            worldwide
+          </p>
+        </div>
+
+        <!-- sponsors -->
+
+        <!-- desktop -->
+        <div class="hidden lg:flex w-full justify-between items-center">
+          <img src="./assets/icon-logo/company-logo.png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(1).png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(2).png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(3).png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(4).png" alt="" />
+        </div>
+        <!-- tablet -->
+        <div
+          class="hidden md:flex md:flex-wrap lg:hidden md:w-full md:max-w-full items-center md:justify-center md:space-y-[1rem] lg:justify-between">
+          <div class="flex justify-between items-center md:w-full lg:gap-[7rem]">
+            <img src="./assets/icon-logo/company-logo.png" alt="" />
+            <img src="./assets/icon-logo/company-logo-(1).png" alt="" />
+            <img src="./assets/icon-logo/company-logo-(2).png" alt="" />
+          </div>
+
+          <div class="flex justify-between items-center md:w-[50%] lg:w-full lg:gap-[7rem]">
+            <img src="./assets/icon-logo/company-logo-(3).png" alt="" />
+            <img src="./assets/icon-logo/company-logo-(4).png" alt="" />
+          </div>
+        </div>
+
+        <!-- mobile sponsors -->
+        <div class="relative md:hidden overflow-hidden w-screen -mx-4">
+          <div class="animate-scroll min-w-max flex whitespace-nowrap gap-8">
+            <div class="flex gap-8">
+              <img src="./assets/icon-logo/company-logo.png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(1).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(2).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(3).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(4).png" alt="" class="w-20 h-auto" />
+            </div>
+            <div class="flex gap-8">
+              <img src="./assets/icon-logo/company-logo.png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(1).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(2).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(3).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(4).png" alt="" class="w-20 h-auto" />
+            </div>
+          </div>
+          <!-- left fade -->
+          <div class="pointer-events-none absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-white to-transparent"></div>
+          <!-- right fade -->
+          <div class="pointer-events-none absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-white to-transparent"></div>
+        </div>
+      </div>
+
+      <!-- Services -->
+
+      <div
+        class="w-[100%] h-[100%] mt-[2rem] px-[20px] py-[43px] bg-white border-[1px] relative lg:static border-[#EFF0F6] rounded-[30px] hidden lg:flex justify-between lg:items-center">
+        <div class="flex flex-col space-y-[35px]">
+          <div class="flex flex-col space-y-[20px]">
+            <div
+              class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[16px] h-[30px] w-[94px] rounded-[50px]">
+              Services
+            </div>
+            <p class="w-[501px] text-[36px] text-[#A05BF8] leading-tight">Streamlined Business Operations</p>
+            <p class="w-[501px] text-[16px] font-family text-[#7A7D9C] leading-normal">
+              Our technology solutions streamline and optimize business operations, automating processes, enhancing efficiency, and improving overall
+              productivity. From seamless inventory management to streamlined customer relationship management, our solutions empower businesses to
+              operate at their peak potential, saving time and resources while maximizing profitability.
+            </p>
+          </div>
+          <div class="w-full flex justify-end">
+            <div class="flex items-center w-[120.22px] justify-between">
+              <button class="w-[55.11px] h-[55.11px] rounded-[50%] border-[1px] border-[#7F56D9] flex items-center justify-center">
+                <img src="./assets/icon-logo/frame.png" alt="" />
+              </button>
+              <button class="bg-[#7F56D9] w-[55.11px] h-[55.11px] rounded-[50%] flex items-center justify-center">
+                <img src="./assets/icon-logo/frame-(1).png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-full">
+          <div class="w-[100%] h-[400px]">
+            <img src="./images/image-wrapper.png" alt="" class="lg:w-[489px] lg:h-full max-h-full rounded-[30px]" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+
+      <div class="flex flex-col mt-[3rem] w-full">
+        <div class="flex flex-col items-center space-y-[0.7rem]">
+          <div
+            class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[120px] rounded-[50px]">
+            Testimonials
+          </div>
+          <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5r]">
+            1M+ Global Customers
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row px-[20px] py-[43px] bg-white border-[1px] border-[#EFF0F6] rounded-[30px] space-y-[2rem] lg:space-x-[2rem] items-center w-[100%] mt-[1rem]">
+          <img src="./images/client-image.png" alt="" class="lg:w-[495px] lg:h-[335px] md:w-[100%] md:h-[]" />
+          <div class="flex flex-col h-full w-full lg:w-[550px] space-y-[1rem]">
+            <p class="w-full lg:w-[550px] text-[16px] text-[#7A7D9C] leading-tight">
+              I am incredibly impressed with the transformative technology solutions provided by FutureSphere. Their cutting-edge innovations have
+              revolutionized our business operations, streamlining processes and boosting productivity. The seamless connectivity and intuitive user
+              interface have made a significant impact on our team's efficiency. Thanks to their advanced data analytics capabilities, we now make
+              data-driven decisions with confidence. I highly recommend FutureSphere to any organization seeking to stay ahead in the digital era.
+            </p>
+            <div class="flex flex-col h-[50px] md:h-[58px] justify-between">
+              <p class="text-[16px] md:text-[24px]">Sarah Thompson</p>
+              <p class="text-[16px] md:text-[20px]">CEO Thompson Enterprises</p>
+            </div>
+            <div class="w-full flex justify-end">
+              <div class="flex items-center w-[58px] md:w-[120.22px] justify-between">
+                <button
+                  class="w-[24px] h-[24px] md:w-[55.11px] md:h-[55.11px] rounded-[50%] border-[1px] border-[#7F56D9] flex items-center justify-center">
+                  <img src="./assets/icon-logo/frame.png" alt="" />
+                </button>
+                <button class="bg-[#7F56D9] w-[24px] h-[24px] md:w-[55.11px] md:h-[55.11px] rounded-[50%] flex items-center justify-center">
+                  <img src="./assets/icon-logo/frame-(1).png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- trusted by -->
+      <div class="flex items-center justify-between w-full">
+        <div class="w-[35%] md:w-[45%] h-[0.5px] md:h-[1px] bg-black/50"></div>
+        <div class="text-[#7A7D9C] font-family text-xs md:text-1xl">Trusted By</div>
+        <div class="w-[35%] md:w-[45%] h-[0.5px] md:h-[1px] bg-black/50"></div>
+      </div>
+      <div class="hidden md:flex flex-col w-full items-center space-y-[1rem]">
+        <div class="flex items-center justify-between md:w-[90%] lg:w-[60%]">
+          <img src="./assets/icon-logo/logo-(1).png" alt="" />
+          <img src="./assets/icon-logo/logo-(2).png" alt="" />
+          <img src="./assets/icon-logo/logo-(3).png" alt="" />
+        </div>
+        <div class="flex items-center justify-between w-[50%] lg:w-[35%]">
+          <img src="./assets/icon-logo/logo-(4).png" alt="" />
+          <img src="./assets/icon-logo/logo-(5).png" alt="" />
+        </div>
+      </div>
+      <!-- mobile -->
+      <div class="flex md:hidden flex-col w-full items-center space-y-[1rem]">
+        <div class="flex items-center justify-between w-[90%]">
+          <img src="./assets/icon-logo/logo-(1).png" alt="" class="w-20 h-auto" />
+          <img src="./assets/icon-logo/logo-(2).png" alt="" class="w-20 h-auto" />
+          <img src="./assets/icon-logo/logo-(3).png" alt="" class="w-20 h-auto" />
+        </div>
+        <div class="flex items-center justify-between w-[50%]">
+          <img src="./assets/icon-logo/logo-(4).png" alt="" class="w-20 h-auto" />
+          <img src="./assets/icon-logo/logo-(5).png" alt="" class="w-20 h-auto" />
+        </div>
+      </div>
+
+      <!-- blogs -->
+      <div class="mt-[3rem] flex flex-col w-full items-center justify-center">
+        <div class="flex flex-col items-center space-y-[0.7rem]">
+          <div
+            class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[90px] rounded-[50px]">
+            Blogs
+          </div>
+          <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5r]">
+            From our Latest Blogs
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 items-center w-full mt-[2rem]">
+          <div class="flex-1 h-[565px] bg-white border-2px border-[#EFF0F6] rounded-[20px] flex flex-col space">
+            <img src="./images/blogs-featured-image.png" alt="" class="w- h-[220px]" />
+            <div class="flex flex-col space-y-[1rem] px-[20px]">
+              <div class="text-white rounded-[50px] bg-[#C7A0F9] w-[97px] h-[30px] flex items-center justify-center font-family">Healthcare</div>
+              <p class="text-[#272422] font-medium text-[20px] w-[95%] leading-none">The Future of AI in Healthcare: Transforming Patient Care</p>
+              <p class="text-[16px] text-[#8B857F] w-full">
+                Explore the incredible potential of artificial intelligence (AI) in revolutionizing healthcare. Discover how AI-driven technologies
+                are enhancing diagnostics, personalized medicine, and patient outcomes. Dive into real-world examples and gain insights into the
+                future of healthcare.
+              </p>
+              <div class="w-full flex items-center justify-end">
+                <p class="underline underline-offset-[5px] text-[#8B857F]"><a href="">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 h-[565px] bg-white border-2px border-[#EFF0F6] rounded-[20px] flex flex-col space">
+            <img src="./images/blogs-featured-image.png" alt="" class="w- h-[220px]" />
+            <div class="flex flex-col space-y-[1rem] px-[20px]">
+              <div class="text-white rounded-[50px] bg-[#C7A0F9] w-[97px] h-[30px] flex items-center justify-center font-family">Healthcare</div>
+              <p class="text-[#272422] font-medium text-[20px] w-[95%] leading-none">The Future of AI in Healthcare: Transforming Patient Care</p>
+              <p class="text-[16px] text-[#8B857F] w-full">
+                Explore the incredible potential of artificial intelligence (AI) in revolutionizing healthcare. Discover how AI-driven technologies
+                are enhancing diagnostics, personalized medicine, and patient outcomes. Dive into real-world examples and gain insights into the
+                future of healthcare.
+              </p>
+              <div class="w-full flex items-center justify-end">
+                <p class="underline underline-offset-[5px] text-[#8B857F]"><a href="">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 h-[565px] bg-white border-2px border-[#EFF0F6] rounded-[20px] flex flex-col space">
+            <img src="./images/blogs-featured-image.png" alt="" class="w- h-[220px]" />
+            <div class="flex flex-col space-y-[1rem] px-[20px]">
+              <div class="text-white rounded-[50px] bg-[#C7A0F9] w-[97px] h-[30px] flex items-center justify-center font-family">Healthcare</div>
+              <p class="text-[#272422] font-medium text-[20px] w-[95%] leading-none">The Future of AI in Healthcare: Transforming Patient Care</p>
+              <p class="text-[16px] text-[#8B857F] w-full">
+                Explore the incredible potential of artificial intelligence (AI) in revolutionizing healthcare. Discover how AI-driven technologies
+                are enhancing diagnostics, personalized medicine, and patient outcomes. Dive into real-world examples and gain insights into the
+                future of healthcare.
+              </p>
+              <div class="w-full flex items-center justify-end">
+                <p class="underline underline-offset-[5px] text-[#8B857F]"><a href="">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[254px] h-[35px] flex justify-between items-center mt-[1.5rem] lg:mt-[1.5rem] md:mt-[7.5rem]">
+        <button class="bg-[#7F56D9] text-white w-[137px] h-[35px] rounded-[50px]">Contact Us</button>
+        <button class="flex gap-[1rem] items-center justify-center">
+          View All
+          <div>></div>
+        </button>
+      </div>
+
+      <!-- subscribe -->
+      <div
+        class="w-full h-[570px] lg:h-[570px] md:h-[600px] bg-red-400 rounded-[20px] bg-cover bg-center flex items-center justify-center mt-[2rem] px-[1rem]"
+        style="background-image: url(/Assets/images/3\ 1.png)">
+        <div class="flex flex-col h-[300px] md:h-[348.8px] justify-between items-center text-white">
+          <img src="./assets/icon-logo/icon-wrapper.png" alt="" />
+          <p class="text-[20px] md:text-[48px]">Do cool things with us.</p>
+          <p class="text-[12px] md:text-[20px] w-[284px] md:w-[410.12px] text-center font-light font-family">
+            Stay in the loop with updates from our team and community. Once a month.
+          </p>
+
+          <form class="hidden md:flex w-[470px] h-[48px] text-[#5F6486] bg-white items-center justify-between px-[0.2rem] rounded-[13px]">
+            <input type="email" placeholder="Enter your email" class="px-[0.8rem] text-[14px] bg-none border-none outline-0" />
+            <button
+              type="submit"
+              class="flex items-center justify-center w-[209.8px] h-[42.33px] bg-[#7F56D9] text-white rounded-[10px] font-bold text-[12px]">
+              Subscribe to newsletter
+            </button>
+          </form>
+
+          <div class="md:hidden flex flex-col items-center justify-center w-full space-y-[0.5rem]">
+            <form class="w-full">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="px-[0.8rem] text-[14px] h-[48px] bg-none border-none outline-0 w-full bg-white rounded-[13px] text-[#5F6486]" />
+            </form>
+            <button
+              type="submit"
+              class="flex items-center justify-center w-[209.8px] h-[42.33px] bg-[#7F56D9] text-white rounded-[10px] font-bold text-[12px]">
+              Subscribe to newsletter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer-bg bg-[#7F56D9] w-full h-[265px] mt-[6rem] px-[1rem] md:px-[3.5rem] pt-[4rem] pb-[2rem] flex flex-col justify-between items-center bg-cover bg-center">
+      <div class="w-full h-[0.1px] bg-white"></div>
+      <div class="flex flex-col md:flex-row w-full md:justify-between items-start md:items-center space-y-[0.7rem]">
+        <img src="./assets/icon-logo/logo-wrapper.png" alt="" class="md:w-[172.25px] md:h-[24px] h-[26px] w-[172.25px]" />
+        <ul class="flex text-white text-[16px] font-normal font-family w-[90%] md:w-[360px] justify-between items-center">
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="w-full h-[0.1px] bg-white"></div>
+      <div class="w-full flex items-center justify-between">
+        <p class="text-[12px] font-family text-white tracking-widest md:tracking-normal">© 2023 FutureSphere. All rights reserved.</p>
+        <img src="./assets/icon-logo/frame-1000002508.png" alt="" class="hidden md:flex" />
+      </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>

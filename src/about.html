@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>About</title>
+  </head>
+  <body class="w-[100%] bg-[#f9fafb] pt-[1rem] md:pt-[1rem]">
+    <!-- desktop nav -->
+    <nav class="hidden md:flex w-full items-center justify-center h-[59px]">
+      <div class="fixed top-[1rem] h-[59px] lg:px-[5rem] z-100 w-full flex items-center justify-center container mx-auto">
+        <div
+          id="desktopNav"
+          class="w-[100%] h-full bg-[#1B152B] rounded-[50px] hidden md:flex justify-between items-center p-[1.5rem] container transition-all duration-500">
+          <img src="./assets/icon-logo/logo-wrapper.png" alt="" />
+          <ul class="flex space-x-[1rem] text-white md:text-[12px] lg:text-[16px] font-normal font-family">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+          <button class="bg-[#7F56D9] text-white w-[137px] h-[35px] rounded-[50px]">Contact Us</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile nav -->
+    <nav class="md:hidden">
+      <!-- default nav -->
+      <div class="flex w-full items-center justify-center">
+        <div class="fixed top-[1rem] h-[40px] px-[1rem] z-100 w-full flex items-center justify-center">
+          <div
+            id="defaultMenu"
+            class="bg-[#1B152B] h-full w-[100%] rounded-[50px] md:hidden flex justify-between items-center p-[1rem] container transition-all duration-500">
+            <img src="./assets/icon-logo/logo-wrapper.png" alt="" class="w-[120px] h-[17px]" />
+            <button id="toggleMenu">
+              <img src="./assets/icon-logo/mobile-hamburger.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- toggled div -->
+      <div
+        id="mobileMenu"
+        class="opacity-0 pointer-events-none md:hidden fixed gap-[2rem] top-0 z-100 bg-[#1B152B] w-full h-full p-[1rem] container transform translate-y-full transition-all duration-200 ease-in-out">
+        <div class="flex justify-between items-center">
+          <img src="./assets/icon-logo/logo-wrapper.png" alt="" class="w-[120px] h-[17px]" />
+          <button class="text-[#7F56D9] text-3xl" id="closeMenu">&times</button>
+        </div>
+
+        <div class="flex flex-col w-[100%] justify-between gap-[2rem] mt-[2rem]">
+          <ul class="flex flex-col space-y-[2rem] text-white text-[16px] font-normal font-family">
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+          <button class="bg-[#7F56D9] text-white h-[35px] rounded-[5px]">Contact Us</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="mt-[4rem] md:mt-[4.5rem] flex flex-col items-center space-y-[3rem] container px-[1rem] md:px-[0rem] lg:px-[5rem] mx-auto">
+      <div class="flex flex-col items-center space-y-[1rem]">
+        <p class="font-medium md:font-normal md:w-full lg:w-[100%] text-[24px] md:text-[48px] text-center text-[#1B152B] leading-tight">
+          To revolutionize industries through innovative technology solutions, driving positive change and empowering individuals and businesses
+        </p>
+        <p class="font-family text-[16px] font-normal text-[#7A7D9C] text-center lg:w-[930px]">
+          At FutureSphere our mission is to empower individuals and businesses through innovative technology solutions that enrich lives, foster
+          growth, and drive positive change. We are dedicated to pushing the boundaries of what's possible, creating transformative experiences that
+          make a lasting impact in a rapidly evolving digital landscape.
+        </p>
+        <div class="w-[260px] h-[35px] flex justify-between items-center">
+          <button class="h-[100%] w-[108px] bg-[#1B152B] text-white rounded-[50px] text-[16px] font-normal">Sign Up</button>
+          <button class="h-[100%] w-[137px] text-white bg-[#7F56D9] rounded-[50px] text-[16px] font-normal">Contact Us</button>
+        </div>
+        <img src="./images/hero-image-wrapper.png" alt="" class="mt-[3rem] w-[100%] h-[245px] md:h-[415px] lg:h-[701px]" />
+      </div>
+
+      <!-- our Story -->
+      <div
+        class="w-[100%] flex flex-col text-[#7F56D9] bg-white border-[1px] border-[#EFF0F6] rounded-[10px] px-[22px] py-[36px] h-[1410px] md:h-[1700px] lg:h-full space-y-[50px]">
+        <div class="flex flex-col lg:flex-row w-full items-center justify-between space-y-[2rem] lg:space-x-[1rem]">
+          <div class="flex flex-col text-[16px] w-full lg:w-[501px] lg:h-[278px] justify-between space-y-[1.5rem] lg:space-y-[1rem]">
+            <div
+              class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[101px] rounded-[50px]">
+              Our Story
+            </div>
+            <div class="flex flex-col space-y-[1rem] w-full lg:w-[490px]">
+              <p class="text-[#7A7D9C] text-[16px] tracking-tighter leading-tight">
+                In 2010, our founder, Vasily, faced a daunting challenge - preparing for the Law School Admission Test (LSAT) while juggling an
+                internship and evening classes in different cities. The lack of time and a conducive study environment made it incredibly difficult
+                for him to achieve his dream of becoming a lawyer.
+              </p>
+              <p class="text-[#7A7D9C] text-[16px] tracking-tighter leading-tight">
+                During a train ride, a moment of inspiration struck Vasily. He wished for a convenient study tool on his phone to help him prepare for
+                the LSAT. However, such an app didn't exist at the time. Determined to overcome this hurdle, Vasily took matters into his own hands
+                and developed one of the earliest and most comprehensive LSAT apps on the market. The app quickly gained popularity, becoming the #1
+                paid LSAT app for over a year.
+              </p>
+            </div>
+          </div>
+          <img src="./images/image-frame.png" alt="" class="rounded-[20px] w-full" />
+        </div>
+
+        <div class="flex w-full items-center justify-between space-x-[1rem] flex-col lg:flex-row lg:space-x-[1rem]">
+          <img src="./images/image-frame.png" alt="" class="rounded-[20px] hidden lg:flex" />
+          <div class="flex flex-col text-[16px] w-full lg:w-[501px] h-[278px] space-y-[2rem] lg:space-y-0">
+            <div class="flex flex-col space-y-[1rem] w-full lg:w-[485px]">
+              <p class="text-[#7A7D9C] text-[16px] tracking-tighter leading-tight">
+                This success prompted Vasily to establish FutureSphere, an app development company with a strong focus on creating profitable and
+                impactful applications. Building on their initial achievement, FutureSphere expanded their educational app portfolio to include exams
+                such as SAT, GMAT, MCAT, and more, catering to the needs of a broader audience.
+              </p>
+              <p class="text-[#7A7D9C] text-[16px] tracking-tighter leading-tight">
+                As time went on, it became evident that the industry had much more to offer than just exam-focused applications. People began
+                approaching FutureSphere, seeking guidance on how to develop their own apps, what it takes to succeed, and how to navigate the complex
+                world of mobile applications. In response to this growing demand for expertise and support, FutureSphere expanded its services and
+                evolved into a comprehensive resource for aspiring app creators - a company known as FutureSphere.
+              </p>
+            </div>
+            <img src="./images/image-frame.png" alt="" class="rounded-[20px] lg:hidden" />
+          </div>
+        </div>
+      </div>
+
+      <!-- our clients -->
+      <div class="flex flex-col mt-[1rem] md:mt-[15rem] lg:mt-[3.5rem] w-full space-y-[3rem]">
+        <div class="flex flex-col items-center space-y-[1rem]">
+          <div
+            class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[120px] rounded-[50px]">
+            Our Clients
+          </div>
+          <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5r]">
+            Trusted by Industry Leaders
+          </p>
+          <p class="text-[#7A7D9C] font-normal md:font-medium text-[12px] text-center md:text-[16px] font-family w-[303px] md:w-[720px] mt-[1.5r]">
+            Join our roster of satisfied clients and experience the exceptional results and service that have earned us the trust of industry leaders
+            worldwide
+          </p>
+        </div>
+
+        <!-- sponsors -->
+
+        <!-- desktop -->
+        <div class="hidden lg:flex w-full justify-between items-center">
+          <img src="./assets/icon-logo/company-logo.png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(1).png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(2).png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(3).png" alt="" />
+          <img src="./assets/icon-logo/company-logo-(4).png" alt="" />
+        </div>
+        <!-- tablet -->
+        <div
+          class="hidden md:flex md:flex-wrap lg:hidden md:w-full md:max-w-full items-center md:justify-center md:space-y-[1rem] lg:justify-between">
+          <div class="flex justify-between items-center md:w-full lg:gap-[7rem]">
+            <img src="./assets/icon-logo/company-logo.png" alt="" />
+            <img src="./assets/icon-logo/company-logo-(1).png" alt="" />
+            <img src="./assets/icon-logo/company-logo-(2).png" alt="" />
+          </div>
+
+          <div class="flex justify-between items-center md:w-[50%] lg:w-full lg:gap-[7rem]">
+            <img src="./assets/icon-logo/company-logo-(3).png" alt="" />
+            <img src="./assets/icon-logo/company-logo-(4).png" alt="" />
+          </div>
+        </div>
+
+        <!-- mobile sponsors -->
+        <div class="relative md:hidden overflow-hidden w-screen -mx-4">
+          <div class="animate-scroll min-w-max flex whitespace-nowrap gap-8">
+            <div class="flex gap-8">
+              <img src="./assets/icon-logo/company-logo.png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(1).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(2).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(3).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(4).png" alt="" class="w-20 h-auto" />
+            </div>
+            <div class="flex gap-8">
+              <img src="./assets/icon-logo/company-logo.png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(1).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(2).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(3).png" alt="" class="w-20 h-auto" />
+              <img src="./assets/icon-logo/company-logo-(4).png" alt="" class="w-20 h-auto" />
+            </div>
+          </div>
+          <!-- left fade -->
+          <div class="pointer-events-none absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-white to-transparent"></div>
+          <!-- right fade -->
+          <div class="pointer-events-none absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-white to-transparent"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center space-y-[1rem]">
+        <div
+          class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[120px] rounded-[50px]">
+          Our Values
+        </div>
+        <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5r]">
+          Guided by Integrity and Purpose
+        </p>
+        <p class="text-[#7A7D9C] font-normal md:font-medium text-[12px] text-center md:text-[16px] font-family w-[303px] md:w-[100%] mt-[1.5r]">
+          At FutureSphere, we are driven by a strong set of values that shape every aspect of our business, ensuring transparency, ethical practices,
+          and a shared commitment to making a positive impact.
+        </p>
+      </div>
+
+      <!-- Tools -->
+      <div
+        class="w-full space-y-[] md:space-y-[100px] rounded-[10px] flex flex-col bg-white border-[1px] border-[#EFF0F6] px-[65px] md:px-[50px] lg:px-[65px] py-[47px] items-center">
+        <div class="flex md:hidden lg:flex lg:flex-row flex-col justify-between items-center w-full">
+          <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+            <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+            <img src="./assets/icon-logo/god.png" alt="" class="w-[40px] h-[36px]" />
+            <div class="flex flex-col items-center h-[154px] justify-between">
+              <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Integrity</p>
+              <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                Upholding honesty and ethical conduct in everything we do, building trust with our stakeholders.
+              </p>
+            </div>
+          </div>
+          <div class="w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+          <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+            <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute top-[4rem] rounded-[50%]"></div>
+            <img src="./assets/icon-logo/icon-(1)2.png" alt="" class="w-[40px] h-[36px]" />
+            <div class="flex flex-col items-center h-[154px] justify-between">
+              <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Innovation</p>
+              <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                Embracing a culture of creativity and continuous improvement to drive groundbreaking solutions.
+              </p>
+            </div>
+          </div>
+          <div class="flex w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+          <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+            <div class="flex w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute top-[4rem] rounded-[50%]"></div>
+            <img src="./assets/icon-logo/icon-(2)1.png" alt="" class="w-[40px] h-[36px]" />
+            <div class="flex flex-col items-center h-[154px] justify-between">
+              <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Collaboration</p>
+              <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                Fostering a collaborative environment that encourages teamwork, diversity, and shared success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tools 2 -->
+        <div class="flex md:hidden lg:flex lg:flex-row flex-col justify-between items-center w-full">
+          <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+            <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+            <img src="./assets/icon-logo/icon-(3).png" alt="" class="w-[40px] h-[36px]" />
+            <div class="flex flex-col items-center h-[154px] justify-between">
+              <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Customer-centric</p>
+              <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                Putting our customers at the heart of everything we do, delivering exceptional experiences and exceeding their expectations.
+              </p>
+            </div>
+          </div>
+          <div class="w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+          <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+            <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute top-[4rem] rounded-[50%]"></div>
+            <img src="./assets/icon-logo/icon-(4).png" alt="" class="w-[40px] h-[36px]" />
+            <div class="flex flex-col items-center h-[154px] justify-between">
+              <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Sustainability</p>
+              <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                Operating with a focus on environmental and social responsibility, striving for a more sustainable future.
+              </p>
+            </div>
+          </div>
+          <div class="flex w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+          <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+            <div class="flex w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute top-[4rem] rounded-[50%]"></div>
+            <img src="./assets/icon-logo/icon-(5).png" alt="" class="w-[40px] h-[36px]" />
+            <div class="flex flex-col items-center h-[154px] justify-between">
+              <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Excellence</p>
+              <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                Pursuing excellence in all aspects of our work, setting high standards and striving for continuous growth and improvement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tablet -->
+        <div class="hidden lg:hidden md:flex md:flex-col w-full space-y-[150px]">
+          <div class="flex w-full justify-between items-center">
+            <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+              <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+              <img src="./assets/icon-logo/god.png" alt="" class="w-[40px] h-[36px]" />
+              <div class="flex flex-col items-center h-[154px] justify-between">
+                <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Integrity</p>
+                <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                  Upholding honesty and ethical conduct in everything we do, building trust with our stakeholders.
+                </p>
+              </div>
+            </div>
+            <div class="flex w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+            <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+              <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+              <img src="./assets/icon-logo/icon-(1)2.png" alt="" class="w-[40px] h-[36px]" />
+              <div class="flex flex-col items-center h-[154px] justify-between">
+                <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Innovation</p>
+                <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                  Embracing a culture of creativity and continuous improvement to drive groundbreaking solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- second -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+              <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+              <img src="./assets/icon-logo/icon-(2)1.png" alt="" class="w-[40px] h-[36px]" />
+              <div class="flex flex-col items-center h-[154px] justify-between">
+                <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Collaboration</p>
+                <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                  Fostering a collaborative environment that encourages teamwork, diversity, and shared success.
+                </p>
+              </div>
+            </div>
+            <div class="flex w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+            <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+              <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+              <img src="./assets/icon-logo/icon-(3).png" alt="" class="w-[40px] h-[36px]" />
+              <div class="flex flex-col items-center h-[154px] justify-between">
+                <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Customer-centric</p>
+                <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                  Putting our customers at the heart of everything we do, delivering exceptional experiences and exceeding their expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- third -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+              <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+              <img src="./assets/icon-logo/icon-(4).png" alt="" class="w-[40px] h-[36px]" />
+              <div class="flex flex-col items-center h-[154px] justify-between">
+                <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Sustainability</p>
+                <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                  Operating with a focus on environmental and social responsibility, striving for a more sustainable future.
+                </p>
+              </div>
+            </div>
+            <div class="flex w-[100%] md:w-[1px] bg-[#EDF0EE] h-[1px] md:h-[201px]"></div>
+            <div class="flex flex-col w-[271px] p-[20px] space-y-[20px] justify-between items-center relative">
+              <div class="w-[155.75px] h-[155.75px] bg-[#7F56D9]/20 blur-xl absolute rounded-[50%] top-[4rem]"></div>
+              <img src="./assets/icon-logo/icon-(5).png" alt="" class="w-[40px] h-[36px]" />
+              <div class="flex flex-col items-center h-[154px] justify-between">
+                <p class="font-medium text-[24px] text-[#1B152B] w-[231px] text-center leading-none">Excellence</p>
+                <p class="font-family text-[#7A7D9C] text-[16px] text-center w-[231px]">
+                  Pursuing excellence in all aspects of our work, setting high standards and striving for continuous growth and improvement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center space-y-[1rem] mt-[2rem]">
+        <div
+          class="bg-[#7F56D9]/12 border-[3px] border-[#EFF0F6] text-[#7F56D9] font-family flex items-center justify-center text-[12px] md:text-[16px] h-[30px] w-[120px] rounded-[50px]">
+          Our Teams
+        </div>
+        <p class="text-[#1B152B] lg:text-[45px] md:text-[36px] font-medium md:font-normal text-center w-[303px] md:w-[100%] text-[24px] mt-[0.5r]">
+          Meet our team
+        </p>
+        <p class="text-[#7A7D9C] font-normal md:font-medium text-[16px] text-center md:text-[16px] font-family w-[303px] md:w-[100%] mt-[1.5r]">
+          Meet our passionate and talented team, committed to delivering exceptional results, driving innovation, and transforming your vision into
+          reality.
+        </p>
+      </div>
+
+      <div
+        class="rounded-[10px] flex flex-col bg-white border-[1px] border-[#EFF0F6] w-[100%] items-center justify-between p-[40px] md:px-[100px] md:py-[30px] space-y-[2rem]">
+        <p id="testimonialText" class="text-[#7A7D9C] text-[12px] md:text-[16px] w-full h-[101px] text-center tracking-tighter">
+          During a train ride, a moment of inspiration struck Vasily. He wished for a convenient study tool on his phone to help him prepare for the
+          LSAT. However, such an app didn't exist at the time. Determined to overcome this hurdle, Vasily took matters into his own hands and
+          developed one of the earliest and most comprehensive LSAT apps on the market. The app quickly gained popularity, becoming the #1 paid LSAT
+          app for over a year.
+        </p>
+        <div class="flex flex-col items-center">
+          <p id="testimonialName" class="text-[#7F56D9] font-medium text-[16px] mb-[1.2rem]">John Wick</p>
+          <p id="testimonialRole" class="text-[16px] text-[#7A7D9C]">CEO FutureSphere</p>
+          <img src="./assets/icon-logo/social-media-icons.png" alt="" class="mt-[1rem]" />
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center space-y-[2rem] w-full justify-center">
+        <div id="carousel" class="flex items-baseline">
+          <div class="item relative -ml-10 z-10">
+            <img src="./images/member-image-(6).png" alt="" class="rounded-full transition-all duration-500 w-[179.51px] h-[179.51px]" />
+          </div>
+          <div class="item relative -ml-10 z-20">
+            <img src="./images/member-image-(5).png" alt="" class="rounded-full transition-all duration-500 w-[192.87px] h-[192.87px]" />
+          </div>
+          <div class="item relative -ml-10 z-30">
+            <img src="./images/member-image-(4).png" alt="" class="rounded-full transition-all duration-500 w-[222.47px] h-[222.47px]" />
+          </div>
+          <div class="item relative -ml-10 z-40">
+            <img src="./images/member-image.png" alt="" class="rounded-[50%] transition-all duration-500 w-[315.09px] h-[315.09px]" />
+          </div>
+          <div class="item relative -ml-10 z-30">
+            <img src="./images/member-image-(1).png" alt="" class="rounded-full transition-all duration-500 w-[222.47px] h-[222.47px]" />
+          </div>
+          <div class="item relative -ml-10 z-20">
+            <img src="./images/member-image-(2).png" alt="" class="rounded-full transition-all duration-500 w-[192.87px] h-[192.87px]" />
+          </div>
+          <div class="item relative -ml-10 z-10">
+            <img src="./images/member-image-(3).png" alt="" class="rounded-full transition-all duration-500 w-[179.51px] h-[179.51px]" />
+          </div>
+        </div>
+
+        <div class="flex items-center w-[120.22px] justify-between">
+          <button id="left" class="w-[55.11px] h-[55.11px] rounded-[50%] border-[1px] border-[#7F56D9] flex items-center justify-center">
+            <img src="./assets/icon-logo/frame.png" alt="" />
+          </button>
+          <button id="right" class="bg-[#7F56D9] w-[55.11px] h-[55.11px] rounded-[50%] flex items-center justify-center">
+            <img src="./assets/icon-logo/frame-(1).png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
