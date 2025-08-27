@@ -7,11 +7,7 @@ const desktopNav = document.getElementById("desktopNav");
 //mobile nav
 toggleMenu.addEventListener("click", () => {
   // defaultMenu.classList.add("hidden");
-  mobileMenu.classList.remove(
-    "translate-y-full",
-    "opacity-o",
-    "pointer-events-none"
-  );
+  mobileMenu.classList.remove("translate-y-full", "opacity-o", "pointer-events-none");
   mobileMenu.classList.add("translate-y-0", "opacity-100");
 });
 
@@ -28,29 +24,13 @@ closeMenu.addEventListener("click", () => {
 //nav animation
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
-    desktopNav.classList.add(
-      "bg-[#1B152B]/20",
-      "backdrop-blur-md",
-      "shadow-md"
-    );
-    defaultMenu.classList.add(
-      "bg-[#1B152B]/20",
-      "backdrop-blur-md",
-      "shadow-md"
-    );
+    desktopNav.classList.add("bg-[#1B152B]/20", "backdrop-blur-md", "shadow-md");
+    defaultMenu.classList.add("bg-[#1B152B]/20", "backdrop-blur-md", "shadow-md");
     desktopNav.classList.remove("bg-[#1B152B]");
     defaultMenu.classList.remove("bg-[#1B152B]");
   } else {
-    desktopNav.classList.remove(
-      "bg-[#1B152B]/20",
-      "backdrop-blur-md",
-      "shadow-md"
-    );
-    defaultMenu.classList.remove(
-      "bg-[#1B152B]/20",
-      "backdrop-blur-md",
-      "shadow-md"
-    );
+    desktopNav.classList.remove("bg-[#1B152B]/20", "backdrop-blur-md", "shadow-md");
+    defaultMenu.classList.remove("bg-[#1B152B]/20", "backdrop-blur-md", "shadow-md");
     desktopNav.classList.add("bg-[#1B152B]");
     defaultMenu.classList.add("bg-[#1B152B]");
   }
@@ -68,43 +48,43 @@ const rightBtn = document.getElementById("right");
 
 const testimonials = [
   {
-    img: "/Assets/images/Member Image (6).png",
+    img: "./images/member-image-(6).png",
     text: "Sarah has redefined user experience in mobile banking.",
     name: "Sarah Lee",
     role: "Head of UX Bankly",
   },
   {
-    img: "/Assets/images/Member Image (5).png",
+    img: "./images/member-image-(5).png",
     text: "Jane’s leadership transformed the company into a market leader.",
     name: "Jane Doe",
     role: "CTO BrightTech",
   },
   {
-    img: "/Assets/images/Member Image (4).png",
+    img: "./images/member-image-(4).png",
     text: "Michael’s vision has helped startups scale globally.",
     name: "Michael Scott",
     role: "Founder DunderTech",
   },
   {
-    img: "/Assets/images/Member Image.png",
+    img: "./images/member-image.png",
     text: "During a train ride, a moment of inspiration struck Vasily. He wished for a convenient study tool on his phone to help him prepare for the LSAT. However, such an app didn't exist at the time. Determined to overcome this hurdle, Vasily took matters into his own hands and developed one of the earliest and most comprehensive LSAT apps on the market. The app quickly gained popularity, becoming the #1 paid LSAT app for over a year.",
     name: "John Wick",
     role: "CEO FutureSphere",
   },
   {
-    img: "/Assets/images/Member Image (1).png",
+    img: "./images/member-image-(1).png",
     text: "Alex has built sustainable solutions for energy efficiency.",
     name: "Alex Johnson",
     role: "COO GreenCore",
   },
   {
-    img: "/Assets/images/Member Image (2).png",
+    img: "./images/member-image-(2).png",
     text: "Priya is passionate about AI ethics and innovation.",
     name: "Priya Patel",
     role: "AI Lead NeuralNet",
   },
   {
-    img: "/Assets/images/Member Image (3).png",
+    img: "./images/member-image-(3).png",
     text: "David’s mentorship has guided hundreds of young entrepreneurs.",
     name: "David Kim",
     role: "Angel Investor",
@@ -115,8 +95,7 @@ let activeIndex = 3; // start from the big center image in your HTML
 
 function updateCarousel() {
   items.forEach((img, i) => {
-    const index =
-      (activeIndex + i - 3 + testimonials.length) % testimonials.length;
+    const index = (activeIndex + i - 3 + testimonials.length) % testimonials.length;
     img.src = testimonials[index].img;
 
     let width, height;
